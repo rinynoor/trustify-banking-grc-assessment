@@ -1,6 +1,6 @@
 # Trustify | Indonesia Banking Cyber Resilience Assessment — November 2026
 
-<badge>Independent simulated GRC portfolio case study</badge>
+**Independent simulated GRC portfolio case study**
 
 Trustify is a fictional consulting identity used for an educational portfolio. The project demonstrates a traceable Governance, Risk and Compliance (GRC) assessment using public reporting and synthetic banking scenarios.
 
