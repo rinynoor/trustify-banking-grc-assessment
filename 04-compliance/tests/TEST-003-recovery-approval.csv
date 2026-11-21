@@ -1,0 +1,3 @@
+approval_id,time,approval_type,authorized_role,related_decision,required_evidence,approval_status,exercise_type
+APR-001,10:15,Restoration authorization,Incident Commander,DEC-004,Backup integrity verification and restoration plan,NOT_VERIFIED,SIMULATED_TABLETOP
+APR-002,11:45,Service reopening authorization,Service Owner,DEC-005,Service integrity validation and recovery test results,NOT_VERIFIED,SIMULATED_TABLETOP

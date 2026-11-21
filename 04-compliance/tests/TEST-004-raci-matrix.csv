@@ -1,0 +1,6 @@
+activity,responsible,accountable,consulted,informed,verification_status
+Detect suspicious transactions,Monitoring System,SOC Lead,SOC Analyst,Incident Commander,NOT_VERIFIED
+Perform initial alert triage,SOC Analyst,SOC Lead,Fraud Analyst,Incident Commander,NOT_VERIFIED
+Escalate high risk incident,SOC Lead,Incident Commander,Fraud Analyst,Security Manager,NOT_VERIFIED
+Notify Incident Commander,SOC Lead,Incident Commander,Security Manager,Fraud Operations,NOT_VERIFIED
+Approve initial response,Incident Commander,Incident Commander,SOC Lead;Fraud Analyst,Service Owner,NOT_VERIFIED

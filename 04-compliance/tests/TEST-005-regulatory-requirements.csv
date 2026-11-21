@@ -1,0 +1,5 @@
+requirement_id,regulation,section,requirement_summary,related_control,related_test,assessment_status
+REQ-001,SEOJK 29/SEOJK.03/2022,IV.1.a,Identify cyber assets threats and vulnerabilities,REG-001,TEST-005,NOT_ASSESSED
+REQ-002,SEOJK 29/SEOJK.03/2022,IV.1.b,Protect information technology assets,CTRL-001,TEST-001,NOT_ASSESSED
+REQ-003,SEOJK 29/SEOJK.03/2022,IV.1.c,Detect cybersecurity incidents,CTRL-001,TEST-002,NOT_ASSESSED
+REQ-004,SEOJK 29/SEOJK.03/2022,IV.1.d,Respond to and recover from cybersecurity incidents,CTRL-002,TEST-003;TEST-004,NOT_ASSESSED

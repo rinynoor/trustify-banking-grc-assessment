@@ -1,0 +1,3 @@
+alert_id,rule,account_id,event_ids,reason,severity
+ALERT-001,BRUTE_FORCE,admin02,LOG-002;LOG-003;LOG-004;LOG-005;LOG-006,5 or more failed logins within 5 minutes,HIGH
+ALERT-002,RAPID_COUNTRY_CHANGE,security01,LOG-008;LOG-009,Successful logins from different countries within 5 minutes,MEDIUM

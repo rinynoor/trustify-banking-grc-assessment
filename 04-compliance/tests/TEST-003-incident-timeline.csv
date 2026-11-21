@@ -1,0 +1,10 @@
+event_id,time,activity,decision_or_action,status
+INC-E01,09:00,Mobile banking outage detected,Activate incident response,SIMULATED
+INC-E02,09:10,SOC escalation,Notify incident commander,SIMULATED
+INC-E03,09:25,Containment,Isolate affected systems,SIMULATED
+INC-E04,09:40,Backup investigation,Identify clean recovery point,SIMULATED
+INC-E05,10:00,Backup verification,Confirm backup integrity,SIMULATED
+INC-E06,10:15,Recovery authorization,Approve restoration,SIMULATED
+INC-E07,11:30,Restoration completed,Begin service validation,SIMULATED
+INC-E08,11:45,Integrity validation completed,Approve service reopening,SIMULATED
+INC-E09,12:00,Service restored,Close recovery phase,SIMULATED

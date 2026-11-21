@@ -1,0 +1,6 @@
+revision_id,review_id,artifact,issue,proposed_action,owner,deadline,evidence_of_revision,reviewer_verification,status
+REV-001,QA-001,05-privacy-and-vendors/privacy-assessment.md,Privacy legal applicability and data flows require review,Validate scope and source-specific claims,UNASSIGNED,, ,NOT_VERIFIED,OPEN
+REV-002,QA-002,05-privacy-and-vendors/third-party-risk.md,Hypothetical vendor scoring needs methodology review,Review scoring and due diligence criteria,UNASSIGNED,, ,NOT_VERIFIED,OPEN
+REV-003,QA-003,06-incident-response/incident-response-playbook.md,Recovery and escalation governance findings remain open,Review decision authority and evidence links,UNASSIGNED,, ,NOT_VERIFIED,OPEN
+REV-004,QA-004,07-executive-report/executive-summary.md,Scorecard values need post-merge refresh,Recalculate and reconcile KPI values,UNASSIGNED,, ,NOT_VERIFIED,OPEN
+REV-005,QA-005,04-compliance/tests/TEST-005-regulatory-gap-analysis.md,Regulatory provisions not authoritatively verified,Verify official text and correct mapping,UNASSIGNED,, ,NOT_VERIFIED,OPEN

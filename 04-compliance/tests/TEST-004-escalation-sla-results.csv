@@ -1,0 +1,5 @@
+stage,event_id,target_minutes,actual_minutes,result,assessment_type
+Alert triage,ESC-002,10,7,PASS,SIMULATED
+SOC escalation,ESC-003,15,12,PASS,SIMULATED
+Incident Commander notification,ESC-004,30,25,PASS,SIMULATED
+Initial response decision,ESC-005,45,40,PASS,SIMULATED

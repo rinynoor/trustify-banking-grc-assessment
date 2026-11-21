@@ -1,0 +1,5 @@
+account_id,role,mfa_method
+admin01,privileged,FIDO2
+admin02,privileged,SMS_OTP
+auditor01,standard,TOTP
+security01,privileged,FIDO2

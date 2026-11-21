@@ -1,0 +1,5 @@
+decision_id,time,related_event,decision,proposed_owner,rationale,required_evidence,verification_status
+ED-001,09:07,ESC-002,Classify alerts as high priority,SOC Analyst,Multiple high risk indicators associated with ACC-001,Alert triage record,NOT_VERIFIED
+ED-002,09:12,ESC-003,Escalate suspected account compromise,SOC Lead,Unusual transfers and new beneficiary detected,Escalation ticket,NOT_VERIFIED
+ED-003,09:25,ESC-004,Notify Incident Commander,SOC Lead,Potential financial impact requires coordinated response,Notification acknowledgment,NOT_VERIFIED
+ED-004,09:40,ESC-005,Recommend account protection and investigation,Incident Commander,Reduce potential exposure while preserving evidence,Response authorization and investigation record,NOT_VERIFIED

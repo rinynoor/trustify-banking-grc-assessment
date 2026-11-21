@@ -1,0 +1,6 @@
+decision_id,time,decision,proposed_owner,rationale,required_evidence,verification_status
+DEC-001,09:10,Activate incident response,Incident Commander,Service outage and ransomware indicators,Incident declaration record,NOT_VERIFIED
+DEC-002,09:25,Isolate affected systems,Security Lead,Limit potential spread,Containment approval and isolation logs,NOT_VERIFIED
+DEC-003,10:00,Accept clean recovery point,Backup Lead,Select verified backup,Backup integrity and malware scan records,NOT_VERIFIED
+DEC-004,10:15,Authorize restoration,Incident Commander,Proceed with controlled recovery,Restoration approval record,NOT_VERIFIED
+DEC-005,11:45,Approve service reopening,Service Owner,Validate service integrity,Service validation and approval record,NOT_VERIFIED

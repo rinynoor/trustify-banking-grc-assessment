@@ -1,0 +1,6 @@
+event_id,time,activity,responsible_role,related_alert,status
+ESC-001,09:00,Suspicious transaction detected,Monitoring System,TX-001,SIMULATED
+ESC-002,09:07,Initial alert triage completed,SOC Analyst,TX-001,SIMULATED
+ESC-003,09:12,High risk incident escalated,SOC Lead,TX-001;TX-002;TX-003,SIMULATED
+ESC-004,09:25,Incident Commander notified,SOC Lead,TX-001;TX-002;TX-003,SIMULATED
+ESC-005,09:40,Initial response decision recorded,Incident Commander,TX-001;TX-002;TX-003,SIMULATED

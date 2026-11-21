@@ -1,0 +1,6 @@
+alert_id,timestamp,account_id,alert_type,amount_idr,risk_level,description,source
+TX-001,2026-11-21T09:00:00,ACC-001,UNUSUAL_TRANSFER,45000000,HIGH,Unusual high-value transfer,SYNTHETIC
+TX-002,2026-11-21T09:02:00,ACC-001,RAPID_TRANSFERS,25000000,HIGH,Multiple transfers within short interval,SYNTHETIC
+TX-003,2026-11-21T09:04:00,ACC-001,NEW_BENEFICIARY,15000000,HIGH,Transfer to newly added beneficiary,SYNTHETIC
+TX-004,2026-11-21T09:06:00,ACC-002,UNUSUAL_LOCATION,8000000,MEDIUM,Transaction from unusual location,SYNTHETIC
+TX-005,2026-11-21T09:08:00,ACC-003,NORMAL_TRANSACTION,500000,LOW,Expected customer transaction,SYNTHETIC
