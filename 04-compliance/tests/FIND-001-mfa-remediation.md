@@ -39,7 +39,7 @@ phishing-resistant MFA.
 04-compliance/tests/TEST-001-mfa-results.csv
 
 ## Remediation Status
-OPEN — Not yet implemented.
+CLOSED — Simulated remediation implemented and retested.
 
 ## Residual Risk
 Not assessed.
