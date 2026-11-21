@@ -16,7 +16,7 @@ Trustify demonstrates an evidence-led Governance, Risk and Compliance (GRC) work
 | **[OPEN INTERACTIVE GRC DASHBOARD](https://rinynoor.github.io/trustify-banking-grc-assessment/08-dashboard/)** | Dashboard view of risks, controls, tests, findings, evidence and limitations. |
 | [Browse the GitHub repository](https://github.com/rinynoor/trustify-banking-grc-assessment) | Source files, supporting documentation, datasets and scripts. |
 
-If the GitHub Pages links are not available yet, use the [main portfolio HTML source](index.html) and [dashboard HTML source](08-dashboard/index.html), or browse the repository. GitHub Pages must be enabled in **Settings → Pages**, with branch `main` and folder `/(root)`.
+**Important:** HTML pages should be opened through the GitHub Pages website links above, not through GitHub's `blob/.../*.html` source view. If a Pages link does not load, enable GitHub Pages in **Settings → Pages** using branch `main` and folder `/(root)`, then wait for deployment to finish.
 
 ## Project story and governance records
 
@@ -64,7 +64,8 @@ If the GitHub Pages links are not available yet, use the [main portfolio HTML so
 - [Executive summary](07-executive-report/executive-summary.md)
 
 ### 08 · Dashboard
-- [Interactive dashboard HTML](08-dashboard/index.html)
+- **[Open the rendered Interactive GRC Dashboard](https://rinynoor.github.io/trustify-banking-grc-assessment/08-dashboard/)** — opens the dashboard as a website, not as HTML source.
+- [Dashboard source file (HTML)](08-dashboard/index.html) — technical source code for inspection only.
 
 ### 09 · Quality assurance
 - [Final QA checklist](09-quality-assurance/final-qa-checklist.md)
