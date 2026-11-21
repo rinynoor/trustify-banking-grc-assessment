@@ -2,7 +2,7 @@
 
 ## Assessment Information
 - Test ID: TEST-004
-- Related Control: CTRL-002
+- Related Control: CTRL-003
 - Related Risk: CR-003
 - Exercise Type: Simulated Tabletop
 - Status: PENDING

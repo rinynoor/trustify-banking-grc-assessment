@@ -3,7 +3,7 @@
 ## Finding Information
 - Finding ID: FIND-003
 - Assessment ID: TEST-004
-- Related Control: CTRL-002
+- Related Control: CTRL-003
 - Related Risk: CR-003
 - Assessment Type: Simulated Incident Escalation Tabletop
 - Finding Status: OPEN
