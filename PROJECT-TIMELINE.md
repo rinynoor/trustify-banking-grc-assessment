@@ -1,54 +1,53 @@
 # TRUSTIFY — Project Timeline & Activity History
 
 **Period represented:** 21 November 2026 repository activity  
-**Basis:** Git commit history and artifacts visible in the repository. Earlier research and drafting discussions are summarized only where they are supported by the project record; exact times are not invented.
+**Basis:** Git commit history and artifacts visible in the repository. Times are UTC. Earlier offline analysis is not assigned invented dates.
 
-| Sequence | Date/time (UTC) | Activity | Work performed | Recorded outcome |
+| Sequence | Time (UTC) | Activity | Work performed | Recorded outcome |
 |---|---|---|---|---|
-| 1 | 21 Nov 2026, 01:26 | Repository baseline | Initial portfolio structure and 50 files committed | Initial commit `963c407` |
-| 2 | 21 Nov 2026, 01:36 | Threat evidence review | Updated EV-001 status and limitations for reported FortiGuard financial-sector telemetry | `238c7c8`; primary telemetry still pending |
-| 3 | 21 Nov 2026, 01:38 | OJK evidence review | Updated EV-002 based on ANTARA reporting of OJK coordination and monitoring guidance | `0da5f31`; original circulars and underlying records pending |
-| 4 | 21 Nov 2026, 01:39 | BSSN evidence review | Added BSSN-reported mitigation measures and limitations to EV-003 | `6497528`; primary BSSN records and FortiGuard snapshot pending |
-| 5 | 21 Nov 2026, 01:46 | Control traceability correction | Refined risk/control mappings and assessment checklist references | `41945b5` |
-| 6 | 21 Nov 2026, 01:54 | Escalation traceability correction | Corrected TEST-004 and FIND-003 relationship from CTRL-002 to CTRL-003 | `8adf8d9` |
+| 1 | 01:26 | Repository baseline | Initial 50-file project structure and assessment artifacts | `963c407` |
+| 2 | 01:36 | Threat evidence review | EV-001 status and limitations updated | `238c7c8`; primary telemetry pending |
+| 3 | 01:38 | OJK evidence review | EV-002 updated from ANTARA reporting | `0da5f31`; original OJK records pending |
+| 4 | 01:39 | BSSN evidence review | EV-003 mitigation statements and limitations recorded | `6497528`; original BSSN records and telemetry pending |
+| 5 | 01:46 | Control traceability | Risk/control mappings and checklist references refined | `41945b5` |
+| 6 | 01:54 | Escalation traceability | TEST-004 and FIND-003 corrected from CTRL-002 to CTRL-003 | `8adf8d9` |
+| 7 | Documentation consolidation | Added project overview, timeline, issue register, findings/remediation register, results and changelog | Commits `937899b`, `80fcfb6`, `cf1f20d`, `51c459a`, `4641657`, `d29a752` |
+| 8 | Documentation and regulatory refinement | Updated README/start guide, corrected EV-002 telemetry wording, added official OJK/BI source register, revised TEST-005 requirements and analysis, updated control matrix, KPI and executive report | Commits `9da3336`, `5b5d597`, `18ca711`, `8eec640`, `f463db7`, `2a865cc`, `6fb0860`, `a777e29`, `70ca8c7`, `c82cfd5`, `c205bfb`, `17b1246` |
 
-## Workstream history reflected in the artifacts
+## Workstream history
 
 ### A. Project definition
-- Established a fictional Trustify portfolio identity and a hypothetical Indonesian banking assessment.
+- Established a fictional Trustify portfolio identity and a hypothetical Indonesian commercial-bank scenario.
 - Defined boundaries: no real bank engagement, production access, customer data, or compliance certification.
-- Created project brief and scope/methodology.
+- Created project brief, scope/methodology and a consolidated project overview.
 
 ### B. Threat intelligence
-- Recorded three media-based evidence items (EV-001 to EV-003).
-- Separated time-specific FortiGuard telemetry figures reported by media from confirmed cyber incidents.
-- Preserved limitations: original dashboard snapshots, vendor counting methodology, and primary agency records were not independently obtained.
+- Recorded three media-reported evidence items (EV-001 to EV-003).
+- Distinguished reported FortiGuard activity from successful compromises or confirmed incidents.
+- Corrected EV-002 wording to state the ANTARA article's 1.9 million blocked attacks and 999,000 financial-sector figure without the earlier ambiguous wording.
+- Original historical FortiGuard snapshots and counting methodology remain unavailable.
 
 ### C. Risk assessment
 - Created CR-001 credential theft/unauthorized access, CR-002 ransomware/service availability, and CR-003 suspicious-transaction escalation.
-- Scored inherent likelihood and impact using illustrative assumptions.
-- Residual risk remains unassessed; treatment plans require completion.
+- Inherent scores are illustrative assumptions.
+- Residual risk and treatment effectiveness remain NOT ASSESSED.
 
-### D. Control tests and simulated exercises
-- TEST-001: synthetic privileged MFA baseline (FAIL) and TEST-001-R1 synthetic retest (PASS).
-- TEST-002: detection script processed 10 synthetic login events and generated 2 scenario alerts.
-- TEST-003: ransomware recovery tabletop artifacts exist; formal assessment remains PENDING.
-- TEST-004: transaction escalation tabletop artifacts exist; formal assessment remains PENDING.
-- TEST-005: regulatory evidence gap analysis remains PENDING / NOT ASSESSED.
+### D. Control tests and exercises
+- TEST-001 synthetic MFA baseline FAIL; TEST-001-R1 synthetic retest PASS.
+- TEST-002 processed 10 synthetic login events and generated 2 scenario alerts.
+- TEST-003 recovery tabletop artifacts exist; result remains PENDING.
+- TEST-004 escalation tabletop artifacts exist; result remains PENDING.
+- TEST-005 official OJK/BI source pages have been identified and the preliminary mapping updated; clause-level and entity applicability review remains pending.
 
-### E. Quality and reporting
-- Added control/evidence traceability corrections.
-- Executive summary and KPI artifacts document limitations and the need for independent review.
+### E. Documentation and reporting
+- Added a project overview, work history, issue register, findings/remediation register, project results and changelog.
+- Reconciled executive reporting and KPI definitions with the synthetic test evidence.
 - Independent QA has not been performed.
 
-## How to read this timeline
+## How to interpret this history
 
-The commit timestamps document when changes were saved to GitHub. They do not establish the full duration of analysis, prove that every listed artifact was independently reviewed, or serve as external approval. Earlier project discussions and local work not represented by commits are not assigned invented dates here.
+Commit timestamps establish when repository changes were saved. They do not prove that every artifact was independently reviewed or that external assurance was obtained. Earlier work not represented by Git commits is not assigned invented dates.
 
-## Next close-out actions
+## Current stopping point
 
-1. Reconcile the regulatory matrix against authoritative OJK/BI texts and state applicability boundaries.
-2. Correct the EV-002 claim wording and make source verification status consistent.
-3. Reconcile issue/finding status and KPI definitions across all project artifacts.
-4. Perform a final structural/content QA pass.
-5. Obtain a real independent reviewer if the portfolio is to claim independent review.
+The documentation package is consolidated and the regulatory source baseline has been refreshed. Remaining items are explicitly tracked in `ISSUE-REGISTER.csv`: primary telemetry corroboration, treatment/residual risk, recovery and escalation governance, exact regulatory clause/applicability review, and independent QA. They are not silently marked complete.
