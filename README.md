@@ -1,58 +1,102 @@
 # Trustify | Indonesia Banking Cyber Resilience Assessment — November 2026
 
-**Independent simulated GRC portfolio case study**
+**GRC project portfolio case study · Project owner: Riny Noor**
 
-Trustify is a fictional consulting identity used for an educational portfolio. The project demonstrates a traceable Governance, Risk and Compliance (GRC) assessment using public reporting and synthetic banking scenarios.
+Trustify demonstrates an evidence-led Governance, Risk and Compliance (GRC) workflow for a fictional Indonesian banking scenario. It documents the journey from project idea and scope definition through threat intelligence, risk assessment, control mapping, synthetic testing, findings, remediation, reporting and quality assurance.
 
-**No real bank was engaged, audited, tested, or assessed.** No bank breach, control weakness, or regulatory non-compliance is alleged or certified.
+> **Important scope statement:** This is a simulated educational portfolio. No real bank was engaged, audited, accessed, tested or assessed. All account, transaction, login, recovery and tabletop records are synthetic. Public reporting is cited as contextual evidence, not proof of a successful compromise or a control failure at any real institution. This work is not an audit opinion, certification or legal/regulatory compliance attestation.
 
-## Start here
+---
 
-**Recruiter / portfolio entry point:** open the [Trustify Project Portfolio](index.html) for the complete project journey, results, evidence library and direct links to deliverables. The [interactive GRC Dashboard](08-dashboard/index.html) provides the KPI, risk, test and findings snapshot.
+## Open the portfolio
 
-1. [Project overview](PROJECT-OVERVIEW.md) — what the project is, why it exists, its scope and methodology.
-2. [Project timeline](PROJECT-TIMELINE.md) — recorded work history and Git milestones.
-3. [Issue register](ISSUE-REGISTER.csv) — unresolved project issues and required closure evidence.
-4. [Findings and remediation](FINDINGS-AND-REMEDIATION.csv) — test findings, baseline, retest and status.
-5. [Project results](PROJECT-RESULTS.md) — quantified synthetic results and limitations.
-6. [Changelog](CHANGELOG.md) — repository changes.
-7. [Disclaimer](DISCLAIMER.md) — read before sharing.
-
-## Repository map
-
-| Folder | Contents |
+| Destination | What you will find |
 |---|---|
-| `01-project-charter/` | Project brief, scope and methodology |
-| `02-threat-intelligence/` | Three public-source evidence records and source notes |
-| `03-risk-assessment/` | Three hypothetical cyber risks and scoring |
-| `04-compliance/` | Control mapping, synthetic tests, regulatory gap analysis |
-| `05-privacy-and-vendors/` | Draft privacy and third-party risk assessments |
-| `06-incident-response/` | Draft incident response playbook |
-| `07-executive-report/` | Executive assessment summary |
-| `08-dashboard/` | HTML dashboard |
-| `09-quality-assurance/` | KPI scorecard, review log, QA checklist and revision matrix |
+| **[OPEN MAIN PROJECT PORTFOLIO](https://rinynoor.github.io/trustify-banking-grc-assessment/)** | Recruiter-friendly project story, methodology, project journey, results, evidence library, findings, deliverables and conclusion. |
+| **[OPEN INTERACTIVE GRC DASHBOARD](https://rinynoor.github.io/trustify-banking-grc-assessment/08-dashboard/)** | Dashboard view of risks, controls, tests, findings, evidence and limitations. |
+| [Browse the GitHub repository](https://github.com/rinynoor/trustify-banking-grc-assessment) | Source files, supporting documentation, datasets and scripts. |
 
-## Traceability
+If the GitHub Pages links are not available yet, use the [main portfolio HTML source](index.html) and [dashboard HTML source](08-dashboard/index.html), or browse the repository. GitHub Pages must be enabled in **Settings → Pages**, with branch `main` and folder `/(root)`.
 
-Public evidence (EV) → hypothetical risk (CR) → control objective (CTRL) → test (TEST) → finding (FIND) → remediation/retest → executive results.
+## Project story and governance records
 
-Traceability of project documents does not establish the existence or effectiveness of controls at a real bank.
+1. [Project overview](PROJECT-OVERVIEW.md) — business context, project purpose, scope and methodology.
+2. [Project timeline](PROJECT-TIMELINE.md) — recorded work history and Git milestones.
+3. [Issue register](ISSUE-REGISTER.csv) — issues, current status and closure evidence required.
+4. [Findings and remediation register](FINDINGS-AND-REMEDIATION.csv) — test findings, remediation and retest status.
+5. [Project results](PROJECT-RESULTS.md) — outcomes, metrics, open work and limitations.
+6. [Changelog](CHANGELOG.md) — repository change history.
+7. [Disclaimer](DISCLAIMER.md) — assumptions and limitations.
+
+## Deliverables library
+
+### 01 · Project charter
+- [Project brief](01-project-charter/project-brief.md)
+- [Scope and methodology](01-project-charter/scope-and-methodology.md)
+
+### 02 · Threat intelligence and evidence
+- [Evidence register — EV-001 to EV-003](02-threat-intelligence/evidence-register.csv)
+- [Incident and threat timeline](02-threat-intelligence/incident-timeline.md)
+- Source notes: [EV-001](02-threat-intelligence/sources/EV-001.md) · [EV-002](02-threat-intelligence/sources/EV-002.md) · [EV-003](02-threat-intelligence/sources/EV-003.md)
+
+### 03 · Cyber risk assessment
+- [Cyber risk register](03-risk-assessment/cyber-risk-register.csv)
+- [Risk methodology](03-risk-assessment/risk-methodology.md)
+- [Risk scoring justification](03-risk-assessment/risk-scoring-justification.md)
+
+### 04 · Compliance and control testing
+- [Compliance control matrix](04-compliance/compliance-control-matrix.csv)
+- [Control assessment checklist](04-compliance/control-assessment-checklist.csv)
+- [TEST-001 MFA baseline](04-compliance/tests/TEST-001-mfa-results.csv) · [TEST-001-R1 retest](04-compliance/tests/TEST-001-R1-mfa-results.csv) · [FIND-001 remediation record](04-compliance/tests/FIND-001-mfa-remediation.md)
+- [TEST-002 detection script](04-compliance/tests/detect_suspicious_login.py) · [Synthetic login events](04-compliance/tests/synthetic-login-events.csv) · [Generated detection alerts](04-compliance/tests/TEST-002-detection-alerts.csv)
+- [TEST-003 recovery plan](04-compliance/tests/TEST-003-recovery-plan.md) · [Recovery metrics](04-compliance/tests/TEST-003-recovery-metrics.csv) · [FIND-002 recovery governance](04-compliance/tests/FIND-002-recovery-governance.md)
+- [TEST-004 incident escalation assessment](04-compliance/tests/TEST-004-incident-escalation.md) · [Decision log](04-compliance/tests/TEST-004-decision-log.csv) · [RACI matrix](04-compliance/tests/TEST-004-raci-matrix.csv) · [Escalation timeline](04-compliance/tests/TEST-004-escalation-timeline.csv) · [SLA results](04-compliance/tests/TEST-004-escalation-sla-results.csv) · [FIND-003 escalation governance](04-compliance/tests/FIND-003-escalation-governance.md)
+- [TEST-005 regulatory gap analysis](04-compliance/tests/TEST-005-regulatory-gap-analysis.md) · [Regulatory requirements](04-compliance/tests/TEST-005-regulatory-requirements.csv) · [Regulatory source register](04-compliance/tests/TEST-005-regulatory-sources.csv)
+
+### 05 · Privacy and third-party risk
+- [Privacy assessment](05-privacy-and-vendors/privacy-assessment.md)
+- [Third-party risk assessment](05-privacy-and-vendors/third-party-risk.md)
+
+### 06 · Incident response
+- [Incident response playbook](06-incident-response/incident-response-playbook.md)
+
+### 07 · Executive reporting
+- [Executive summary](07-executive-report/executive-summary.md)
+
+### 08 · Dashboard
+- [Interactive dashboard HTML](08-dashboard/index.html)
+
+### 09 · Quality assurance
+- [Final QA checklist](09-quality-assurance/final-qa-checklist.md)
+- [KPI scorecard](09-quality-assurance/kpi-scorecard.csv)
+- [Review log](09-quality-assurance/review-log.md)
+- [Revision response matrix](09-quality-assurance/revision-response-matrix.csv)
 
 ## Results at a glance
 
-- 3 media-reported public evidence records; underlying primary telemetry and agency records remain pending.
-- 3 hypothetical banking cyber-risk scenarios.
-- TEST-001 synthetic MFA baseline: FAIL; TEST-001-R1 synthetic retest: PASS.
-- TEST-002: 2 alerts generated from 10 synthetic login events.
-- TEST-003 and TEST-004: tabletop artifacts prepared; assessment remains PENDING.
-- TEST-005: preliminary regulatory mapping; NOT ASSESSED.
-- FIND-001 closed only for the synthetic dataset; FIND-002 and FIND-003 open.
-- Independent review: NOT PERFORMED.
+- 3 public-source evidence records documented; primary telemetry and original agency records remain pending.
+- 3 hypothetical banking cyber-risk scenarios recorded.
+- TEST-001 synthetic MFA baseline: **FAIL**; TEST-001-R1 synthetic retest: **PASS**.
+- TEST-002 generated **2 alerts from 10 synthetic login events**.
+- TEST-003 and TEST-004 tabletop artifacts are documented; assessment status remains **PENDING**.
+- TEST-005 regulatory applicability remains **NOT ASSESSED / pending verification**.
+- FIND-001 is closed only for the synthetic dataset; FIND-002 and FIND-003 remain open.
+- Independent review has **not** been performed.
 
-## Status and publication
+These results describe the project artifacts and synthetic exercises only. They must not be interpreted as the security posture, compliance status or audit result of a real bank.
 
-**Documentation package:** consolidated as a simulated GRC portfolio baseline.  
-**Assessment work:** selected synthetic tests have recorded results; recovery governance, escalation governance, risk treatment/residual risk, regulatory applicability and independent QA remain open. This is not an audit or certification.  
-**Publication note:** this repository is intended as a public portfolio. Review all files for confidentiality, personal information, source attribution, intellectual property and accuracy before sharing the repository link with recruiters. No real bank/customer data or credentials should be included.
+## Traceability model
 
-See [PROJECT-RESULTS.md](PROJECT-RESULTS.md) for results and open actions.
+**Public evidence (EV) → hypothetical risk (CR) → control objective (CTRL) → test (TEST) → finding (FIND) → remediation/retest → executive reporting.**
+
+The repository preserves the distinction between reported threat activity, verified primary evidence, simulated test results and unresolved assessment items.
+
+## Contact and professional profile
+
+**Riny Noor** · GRC / Cybersecurity Risk / IT Governance portfolio case study
+
+For professional discussion, use the project owner’s LinkedIn profile and share the **main portfolio website** link above rather than a raw HTML source link.
+
+---
+
+*Portfolio demonstration only. Review [DISCLAIMER.md](DISCLAIMER.md) and [PROJECT-RESULTS.md](PROJECT-RESULTS.md) before interpreting or reusing any result.*
