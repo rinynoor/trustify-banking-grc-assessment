@@ -1,66 +1,74 @@
 # Trustify — Executive GRC Assessment Report
 
-**Indonesia Banking Cyber Resilience Assessment — November 2026**
-**Version:** 0.2 | **Status:** Draft for independent review
-**Assessment type:** Independent educational portfolio project; public-source context and synthetic control tests only.
+**Indonesia Banking Cyber Resilience Assessment — November 2026**  
+**Version:** 1.0 documentation baseline | **Status:** Draft; independent review not performed  
+**Assessment type:** Educational portfolio project; public-source context and synthetic control tests only.
 
 ## Executive decision summary
-Trustify has built an illustrative governance, risk and compliance (GRC) assessment around publicly reported cybersecurity concerns affecting Indonesia's banking sector in November 2026. The repository does **not** document an engagement with, audit of, or verified breach at any specific bank. It combines a three-item public evidence register, three hypothetical priority risks, control mapping and synthetic tabletop/testing artifacts.
 
-**Decision recommendation:** Continue as a *simulated portfolio assessment*. Prioritize treatment-plan completeness, closure of two governance findings, authoritative legal mapping and independent review before describing the project as publication-ready.
+Trustify demonstrates a structured GRC workflow using public reporting about cybersecurity concerns affecting Indonesia's banking sector in November 2026 and a hypothetical bank environment. It is not an engagement with, audit of, or verified breach at any actual bank.
 
-## Assessment boundaries
-**Included:** Public-source threat context, hypothetical banking workflows, inherent risk scoring, simulated MFA and detection testing, recovery and fraud-escalation tabletop exercises, proposed privacy/vendor controls, and documentary traceability.
-**Excluded:** Production access, real customer information, penetration testing, verified bank control effectiveness, actual vendor due diligence, legal certification and real incident response.
+**Overall status:** Documentation and activity history consolidated. Selected synthetic tests produced results, but recovery governance, escalation governance, risk treatment, clause-level regulatory mapping, and independent review remain open.
+
+## Scope and limitations
+
+Included: public-source threat context; three hypothetical banking risks; conceptual control mapping; synthetic MFA and login-detection tests; recovery and fraud-escalation tabletop artifacts; draft privacy/vendor assessments; incident response playbook; dashboard and management reporting.
+
+Excluded: production access, customer information, real penetration testing, verified bank control effectiveness, actual vendor due diligence, legal opinion, compliance certification, and real incident response.
 
 ## Risk register snapshot
+
 | ID | Illustrative scenario | Likelihood | Impact | Inherent score | Current limitation |
 |---|---|---:|---:|---:|---|
-| CR-001 | Credential theft / unauthorized access | 4 | 5 | 20 | Residual risk and actual controls unverified |
-| CR-002 | Ransomware / service availability | 3 | 5 | 15 | Recovery governance remains open |
-| CR-003 | Delayed suspicious transaction escalation | 4 | 5 | 20 | Escalation governance remains open |
+| CR-001 | Credential theft / unauthorized access | 4 | 5 | 20/25 | Residual risk and real controls unverified |
+| CR-002 | Ransomware / service availability | 3 | 5 | 15/25 | Recovery governance remains open |
+| CR-003 | Delayed suspicious transaction escalation | 4 | 5 | 20/25 | Escalation governance remains open |
 
-Scores are illustrative assumptions on a 1–5 scale, **not** measured risk levels at a bank. Treatment owner roles are simulated and treatment target dates are missing.
+Scores are illustrative assumptions, not measured risk levels at a bank. Treatment roles are simulated; due dates and residual risk are not established.
 
-## Control test and finding snapshot
-| Test | Scenario | Documented synthetic result | Interpretation |
-|---|---|---|---|
-| TEST-001 | MFA baseline | FAIL | Synthetic baseline only; separate remediation retest exists |
-| TEST-001-R1 | MFA retest | PASS | Simulated remediation; not production verification |
-| TEST-002 | Suspicious login detection | PASS | Synthetic alerts matched defined test expectations |
-| TEST-003 | Ransomware recovery tabletop | PENDING | Synthetic recovery metrics exist; approvals unverified |
-| TEST-004 | Suspicious transaction escalation | PENDING | Synthetic SLA checks exist; governance unverified |
-| TEST-005 | Regulatory gap analysis | PENDING | Exact provisions and legal applicability require verification |
+## Test and finding results
 
-**Finding closure:** FIND-001 closed in simulation; FIND-002 and FIND-003 open. Therefore simulated finding closure is **1/3 (33.33%)**. Closure is not independent audit certification.
+| Test | Result | Interpretation |
+|---|---|---|
+| TEST-001 MFA baseline | FAIL | One of three synthetic privileged accounts used SMS OTP |
+| TEST-001-R1 MFA retest | PASS | Synthetic remediation changed account to FIDO2; 3/3 met the test criterion |
+| TEST-002 login detection | PASS | 2 expected alerts generated from 10 synthetic events |
+| TEST-003 ransomware recovery | PENDING | Artifacts exist; approvals and governance evidence unverified |
+| TEST-004 transaction escalation | PENDING | Simulated SLA rows pass; decision acknowledgements and governance unverified |
+| TEST-005 regulatory mapping | PENDING / NOT ASSESSED | Official sources identified; clause-level applicability mapping remains open |
 
-## KPI scorecard — recorded project baseline
-| KPI | Reported actual | Target | Interpretation |
+FIND-001 is closed only for the synthetic dataset. FIND-002 and FIND-003 remain open. Simulated finding closure is 1/3 (33.33%); this is not an independent audit closure rate.
+
+## KPI snapshot
+
+| KPI | Actual | Target | Meaning |
 |---|---:|---:|---|
-| KPI-01 Deliverable content baseline | 50.00% (6/12) | 100% | Recorded before this patch; must be reassessed after merge |
-| KPI-02 Evidence traceability | 100.00% (3/3) | 95% | Documentation links only, not independent evidence validation |
-| KPI-03 Risk assessment completion | 0.00% (0/3) | 100% | Residual risk/control evidence incomplete |
-| KPI-04 Control assessment coverage | 40.00% (2/5) | 90% | Two synthetic test results counted |
-| KPI-05 High/critical risk treatment plan coverage | 0.00% (0/3) | 100% | Missing treatment target dates; effectiveness unassessed |
-| KPI-06 Simulated finding closure | 33.33% (1/3) | 90% | One finding closed; two open |
+| Core workstream folders present | 8/8 (100%) | 100% | Folder presence only |
+| Evidence records with URL and limitation fields | 3/3 (100%) | 100% | Record completeness, not primary-source verification |
+| Risks with assessed residual risk | 0/3 (0%) | 100% | Residual risk remains NOT ASSESSED |
+| Tests with recorded non-pending result | 2/5 (40%) | 100% | TEST-001 baseline and TEST-002; synthetic only |
+| Risks with complete treatment and verified effectiveness | 0/3 (0%) | 100% | Treatment/effectiveness incomplete |
+| Simulated findings closed | 1/3 (33.33%) | 100% | FIND-001 synthetic retest only |
 
-These values reflect the **last user-confirmed local scorecard**, not a fresh recalculation from the user's computer. KPI-01 will change when new draft documents are copied into the project. KPI-06 should be explicitly labeled *simulated finding closure*, not peer-review closure.
+Independent QA status is **NOT PERFORMED** and is not represented as a percentage.
 
-## Evidence and regulatory caveats
-- `EV-001` to `EV-003` supply contextual public reporting; they do not establish that hypothetical controls exist or that a specific bank was compromised.
-- NIST CSF 2.0 PR.AA and ISO/IEC 27001:2022 incident management controls are mapped as conceptual references.
-- The project has a **pending-verification** SEOJK 29/SEOJK.03/2022 mapping. No specific legal provision or compliance conclusion should be represented as verified until checked against authoritative texts.
-- Privacy and vendor assessments are proposed-control analyses, not actual data-processing or vendor audits.
+## Regulatory baseline identified
 
-## Prioritized action plan
-| Priority | Action | Evidence required for closure | Current status |
-|---|---|---|---|
-| P1 | Document recovery decision rights and approvals (FIND-002) | Approved simulated RACI, decision and verification log | OPEN |
-| P1 | Clarify fraud escalation ownership (FIND-003) | Reviewed escalation matrix and sign-off | OPEN |
-| P1 | Complete CR-001 to CR-003 treatment plans | Named simulated owner, planned deadline, evidence and acceptance criteria | INCOMPLETE |
-| P1 | Verify exact regulatory provisions | Authoritative source text, citation and applicability analysis | PENDING |
-| P2 | Review privacy and vendor risk drafts | Review log with substantive comments | DRAFT |
-| P2 | Recalculate scorecard and document QA | Reproducible calculation and independent reviewer evidence | PENDING |
+- **SEOJK 29/SEOJK.03/2022:** OJK's cyber resilience and cybersecurity circular for commercial banks.
+- **POJK 11/POJK.03/2022:** OJK IT governance regulation referenced by SEOJK 29/2022.
+- **PADK OJK 1 Tahun 2026:** OJK IT governance regulation for commercial banks, effective 1 March 2026; OJK's official page states it applies to all commercial banks and repeals SEOJK 21/SEOJK.03/2017.
+- **PBI 2 Tahun 2024** and **PADG 24 Tahun 2024 as amended by PADG 29 Tahun 2026:** BI cybersecurity rules for payment-system providers, money/FX market participants, and other parties regulated/supervised by BI. Applicability to a hypothetical bank depends on its regulated activities and status.
+
+Official source register and preliminary mapping are in `04-compliance/tests/TEST-005-regulatory-sources.csv` and `TEST-005-regulatory-requirements.csv`. Exact paragraph citations, full-text legal interpretation, and entity-specific applicability remain pending. No compliance conclusion is made.
+
+## Priority open issues
+
+1. Complete risk treatment plans and justify residual-risk assessment.
+2. Close FIND-002 only after recovery governance/approval evidence is reviewed.
+3. Close FIND-003 only after escalation ownership, acknowledgement and response authorization evidence is reviewed.
+4. Complete clause-level regulatory mapping and applicability analysis.
+5. Obtain a qualified independent review if independent assurance is to be claimed.
 
 ## Conclusion
-Trustify demonstrates a **working portfolio methodology** for organizing cyber threat context, synthetic tests, risk scenarios, governance findings and proposed treatments. It does not demonstrate bank-level cyber resilience, verified regulatory compliance or operational effectiveness. The next meaningful milestone is evidence-backed governance closure and independent document review, not a higher headline completion percentage.
+
+Trustify is a documented simulated GRC portfolio case study with traceable artifacts, a successful synthetic MFA retest, and two expected synthetic login-detection alerts. It also transparently records open recovery, escalation, regulatory, risk-treatment and independent-review gaps. It is not a completed audit, real-bank assessment, compliance certification, or assurance opinion.
