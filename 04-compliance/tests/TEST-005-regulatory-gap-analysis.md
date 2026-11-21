@@ -1,82 +1,60 @@
 # TRUSTIFY — Regulatory Evidence Gap Analysis
 
-Assessment: Indonesia Banking Cyber Resilience Assessment
-Reference: SEOJK 29/SEOJK.03/2022
-Assessment Type: Independent fictional GRC simulation
-Compliance Status: NOT_ASSESSED
+**Assessment:** Indonesia Banking Cyber Resilience Assessment — November 2026  
+**Type:** Fictional GRC portfolio case study; no actual bank assessed  
+**Overall compliance status:** NOT ASSESSED  
+**Regulatory mapping status:** Preliminary source identification completed; clause-level and entity-applicability review remains open.
 
-## REQ-001 — Cyber Risk Identification
-Related Test: TEST-005
-Result: NOT TESTED
+## 1. Regulatory baseline identified
 
-Gap:
-No completed regulatory evidence assessment is available.
+### OJK — commercial banks
+1. **SEOJK 29/SEOJK.03/2022 — Ketahanan dan Keamanan Siber bagi Bank Umum.** The official OJK page identifies the circular and its effective date (27 December 2022). The official summary describes inherent cyber risk assessment, cyber risk management, and related cyber-resilience domains.
+2. **POJK 11/POJK.03/2022 — Penyelenggaraan Teknologi Informasi oleh Bank Umum.** This is the underlying OJK IT governance regulation referenced by SEOJK 29/2022.
+3. **PADK OJK 1 Tahun 2026 — Penyelenggaraan Teknologi Informasi oleh Bank Umum.** The official OJK page states it is effective 1 March 2026 and applies to all commercial banks. The page states that it covers IT governance, IT architecture and strategy, IT risk management, information/network security, IT service providers, data and personal-data protection, internal control/audit, and reporting. It repeals SEOJK 21/SEOJK.03/2017; it does not state that it repeals SEOJK 29/2022.
 
-Required Action:
-Review the risk register, threat intelligence sources,
-risk methodology, and regulatory applicability.
+### Bank Indonesia — conditional scope
+4. **PBI 2 Tahun 2024** covers cybersecurity and information-system security for payment-system providers, money/FX market participants, and other parties regulated and supervised by BI.
+5. **PADG 24 Tahun 2024**, as amended by **PADG 29 Tahun 2026** (effective 25 September 2026), provides implementing rules. PADG 29/2026 addresses, among other things, reporting deadlines/sanctions and BI designation of financial-sector vital information infrastructure.
 
-## REQ-002 — Cyber Protection
-Related Test: TEST-001
-Initial Result: FAIL
-Simulated Retest: PASS
+**Applicability warning:** BI rules are not automatically applicable to every commercial-bank activity. Determine whether the hypothetical institution performs an activity or has a status within BI's regulatory/supervisory scope before mapping a mandatory obligation.
 
-Evidence:
-- TEST-001-mfa-results.csv
-- TEST-001-R1-mfa-results.csv
-- FIND-001-mfa-remediation.md
+## 2. Preliminary requirement mapping
 
-Gap:
-Synthetic MFA remediation does not establish production
-control effectiveness or regulatory compliance.
+| Requirement | Source area | Project control/test link | Status |
+|---|---|---|---|
+| REQ-001 Cyber risk assessment and management | SEOJK 29/2022 Chapters II–III | REG-001 / TEST-005 | Preliminary mapping; not assessed |
+| REQ-002 Protection of IT assets and information | SEOJK 29/2022 protection domain; PADK 1/2026 IT security | CTRL-001 / TEST-001 | Preliminary mapping; not assessed |
+| REQ-003 Monitoring and detection | SEOJK 29/2022 detection domain | CTRL-001 / TEST-002 | Preliminary mapping; not assessed |
+| REQ-004 Incident response and recovery | SEOJK 29/2022 response/recovery domains | CTRL-002 / CTRL-003; TEST-003 / TEST-004 | Preliminary mapping; not assessed |
+| REQ-005 IT governance, risk, data protection, providers and audit | PADK OJK 1/2026 | CTRL-001–003 (partial mapping only) | Preliminary mapping; not assessed |
+| REQ-006 BI cybersecurity obligations | PBI 2/2024 and PADG 24/2024 as amended | CTRL-001–003 (conditional mapping) | Applicability not established |
 
-Required Action:
-Obtain independently verified control evidence.
+See `TEST-005-regulatory-requirements.csv` for machine-readable mapping and `TEST-005-regulatory-sources.csv` for official source register.
 
-## REQ-003 — Cyber Detection
-Related Test: TEST-002
-Result: PASS (synthetic scenarios only)
+## 3. What has and has not been verified
 
-Evidence:
-- TEST-002-detection-alerts.csv
+**Verified at source-register level:** the official OJK and BI webpages identify the regulations, titles, issuers, and key effective dates/scope summaries described above.
 
-Gap:
-Detection performance was validated only against
-the defined synthetic scenarios.
+**Not yet verified:** exact paragraph/letter citations for each requirement, full legal text interpretation, applicability to a defined hypothetical bank profile, control design adequacy, and evidence of operating effectiveness. This project has not reviewed a real bank's license, activities, risk profile, or regulatory correspondence.
 
-Required Action:
-Expand test coverage and obtain independently
-reviewed operational evidence.
+## 4. Test evidence interpretation
 
-## REQ-004 — Incident Response and Recovery
-Related Tests: TEST-003; TEST-004
-Result: PENDING
+- **TEST-001:** synthetic MFA baseline FAIL and synthetic retest PASS. This demonstrates a synthetic configuration change only.
+- **TEST-002:** PASS for two defined synthetic login-detection scenarios only.
+- **TEST-003:** PENDING; recovery governance/approval evidence remains unverified.
+- **TEST-004:** PENDING; escalation governance/acknowledgements remain unverified.
+- **TEST-005:** PENDING; no clause-level legal applicability review or independent regulatory assessment has been completed.
 
-Evidence:
-- FIND-002-recovery-governance.md
-- FIND-003-escalation-governance.md
+## 5. Required closure actions
 
-Gap:
-Recovery and escalation metrics were calculated
-using fictional timelines. Governance decisions,
-role assignments, and approvals remain unverified.
+1. Read the official full text and annexes for SEOJK 29/2022, POJK 11/2022, and PADK OJK 1/2026.
+2. Replace broad source-area labels with exact chapter/paragraph references only after checking the relevant text.
+3. Define the hypothetical institution's business model and activities; establish whether any BI-regulated activity is in scope.
+4. Map each applicable requirement to a control objective, test procedure, evidence item, owner, and assessment result.
+5. Have the mapping reviewed by a qualified independent reviewer; preserve comments and response evidence.
 
-Required Action:
-Complete documented tabletop walkthroughs,
-independent review, and evidence verification.
+## 6. Conclusion
 
-## Regulatory Reference Limitation
+**REGULATORY COMPLIANCE: NOT ASSESSED.**
 
-The detailed section numbering and applicability
-of the cited OJK regulation require verification
-against the authoritative regulatory text.
-
-This document is a preliminary control mapping,
-not a legal opinion or regulatory compliance certification.
-
-## Overall Conclusion
-
-REGULATORY COMPLIANCE: NOT_ASSESSED
-
-Evidence availability is not equivalent to compliance.
-No assessment was performed against an actual bank.
+This is a preliminary regulatory source and gap-mapping exercise, not a legal opinion, regulatory compliance certification, or finding against any actual bank. The presence of an official regulation in the source register does not prove compliance with it.
