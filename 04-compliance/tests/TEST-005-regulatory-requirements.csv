@@ -1,5 +1,7 @@
-requirement_id,regulation,section,requirement_summary,related_control,related_test,assessment_status
-REQ-001,SEOJK 29/SEOJK.03/2022,IV.1.a,Identify cyber assets threats and vulnerabilities,REG-001,TEST-005,NOT_ASSESSED
-REQ-002,SEOJK 29/SEOJK.03/2022,IV.1.b,Protect information technology assets,CTRL-001,TEST-001,NOT_ASSESSED
-REQ-003,SEOJK 29/SEOJK.03/2022,IV.1.c,Detect cybersecurity incidents,CTRL-001,TEST-002,NOT_ASSESSED
-REQ-004,SEOJK 29/SEOJK.03/2022,IV.1.d,Respond to and recover from cybersecurity incidents,CTRL-002,TEST-003;TEST-004,NOT_ASSESSED
+requirement_id,regulation,reference_area,requirement_summary,related_control,related_test,assessment_status,applicability_note
+REQ-001,SEOJK 29/SEOJK.03/2022,Chapter II and III,Inherent cyber risk assessment and cyber risk management,REG-001,TEST-005,PRELIMINARY_MAPPING; NOT_ASSESSED,Exact clause and required evidence must be checked against official full text
+REQ-002,SEOJK 29/SEOJK.03/2022,Protection domain,Protection of information technology assets and information,CTRL-001,TEST-001,PRELIMINARY_MAPPING; NOT_ASSESSED,Do not infer phishing-resistant MFA is a verbatim standalone regulatory requirement without clause review
+REQ-003,SEOJK 29/SEOJK.03/2022,Detection domain,Monitoring and detection of cyber threats and incidents,CTRL-001,TEST-002,PRELIMINARY_MAPPING; NOT_ASSESSED,Exact clause and evidence requirements pending full-text review
+REQ-004,SEOJK 29/SEOJK.03/2022,Response and recovery domains,Incident response and recovery readiness,CTRL-002;CTRL-003,TEST-003;TEST-004,PRELIMINARY_MAPPING; NOT_ASSESSED,Exact clause and evidence requirements pending full-text review
+REQ-005,PADK OJK 1 Tahun 2026,IT governance and IT risk management,IT governance responsibilities risk management information/network security data protection and IT audit,CTRL-001;CTRL-002;CTRL-003,TEST-001;TEST-003;TEST-004,PRELIMINARY_MAPPING; NOT_ASSESSED,Applies to commercial banks per OJK page; exact paragraph mapping pending
+REQ-006,PBI 2 Tahun 2024 and PADG 24/2024 as amended by PADG 29/2026,Governance prevention detection response and recovery,Information-system security and cyber resilience obligations for entities within BI regulatory/supervisory scope,CTRL-001;CTRL-002;CTRL-003,TEST-001;TEST-002;TEST-003;TEST-004,APPLICABILITY_NOT_ESTABLISHED; NOT_ASSESSED,Do not apply automatically to every commercial bank; establish the entity's BI-regulated activity/status first
