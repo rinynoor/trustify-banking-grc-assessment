@@ -8,6 +8,8 @@ Trustify is a fictional consulting identity used for an educational portfolio. T
 
 ## Start here
 
+**Recruiter / portfolio entry point:** open the [Trustify Project Portfolio](index.html) for the complete project journey, results, evidence library and direct links to deliverables. The [interactive GRC Dashboard](08-dashboard/index.html) provides the KPI, risk, test and findings snapshot.
+
 1. [Project overview](PROJECT-OVERVIEW.md) — what the project is, why it exists, its scope and methodology.
 2. [Project timeline](PROJECT-TIMELINE.md) — recorded work history and Git milestones.
 3. [Issue register](ISSUE-REGISTER.csv) — unresolved project issues and required closure evidence.
@@ -49,8 +51,8 @@ Traceability of project documents does not establish the existence or effectiven
 
 ## Status and publication
 
-**Documentation package:** consolidated.  
-**Assessment work:** open items remain; this is not an audit or certification.  
-**Repository visibility:** intended to remain private during review. Do not make public until source accuracy, legal applicability, intellectual property, privacy and final QA have been reviewed.
+**Documentation package:** consolidated as a simulated GRC portfolio baseline.  
+**Assessment work:** selected synthetic tests have recorded results; recovery governance, escalation governance, risk treatment/residual risk, regulatory applicability and independent QA remain open. This is not an audit or certification.  
+**Publication note:** this repository is intended as a public portfolio. Review all files for confidentiality, personal information, source attribution, intellectual property and accuracy before sharing the repository link with recruiters. No real bank/customer data or credentials should be included.
 
-See [PROJECT-RESULTS.md](PROJECT-RESULTS.md) for the close-out criteria and open actions.
+See [PROJECT-RESULTS.md](PROJECT-RESULTS.md) for results and open actions.
