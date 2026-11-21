@@ -1,7 +1,7 @@
 kpi_id,metric,numerator,denominator,actual_percent,target_percent,as_of_date,evidence_location,review_status
-KPI-01,Deliverable content baseline,12,12,100.00,100,2026-11-21,01-project-charter;02-threat-intelligence;03-risk-assessment;04-compliance;05-privacy-and-vendors;06-incident-response;07-executive-report;09-quality-assurance,"file presence only; content quality, accuracy and independent review NOT ASSESSED"
-KPI-02,Evidence traceability,3,3,100.00,95,2026-11-21,04-compliance/control-assessment-checklist.csv,documentation traceability only; independent review pending
-KPI-03,Risk assessment completion,0,3,0.00,100,2026-11-21,03-risk-assessment/cyber-risk-register.csv,full risk assessment incomplete
-KPI-04,Control assessment coverage,2,5,40.00,90,2026-11-21,04-compliance/control-assessment-checklist.csv,simulated test results; independent review pending
-KPI-05,High/critical risk treatment coverage,0,3,0.00,100,2026-11-21,03-risk-assessment/cyber-risk-register.csv,treatment plans incomplete; effectiveness not assessed
-KPI-06,Simulated finding closure,1,3,33.33,90,2026-11-21,04-compliance/tests,simulated finding closure; independent review pending
+KPI-01,Core workstream folders present,8,8,100.00,100,2026-11-21,01-project-charter;02-threat-intelligence;03-risk-assessment;04-compliance;05-privacy-and-vendors;06-incident-response;07-executive-report;09-quality-assurance,"folder presence only; not content quality or project completion"
+KPI-02,Public evidence records with source URL and limitation fields,3,3,100.00,100,2026-11-21,02-threat-intelligence/evidence-register.csv,"record completeness only; primary source verification remains pending"
+KPI-03,Risks with assessed residual risk,0,3,0.00,100,2026-11-21,03-risk-assessment/cyber-risk-register.csv,"residual risk not assessed for all three illustrative scenarios"
+KPI-04,Tests with recorded non-pending result,2,5,40.00,100,2026-11-21,04-compliance/control-assessment-checklist.csv,"TEST-001 baseline and TEST-002 only; TEST-001-R1 is a separate retest; synthetic only"
+KPI-05,Illustrative risks with complete treatment plan and verified effectiveness,0,3,0.00,100,2026-11-21,03-risk-assessment/cyber-risk-register.csv,"treatment plans incomplete; effectiveness not assessed"
+KPI-06,Simulated findings closed,1,3,33.33,100,2026-11-21,FINDINGS-AND-REMEDIATION.csv,"FIND-001 closed on synthetic retest only; independent QA closure not measured"
